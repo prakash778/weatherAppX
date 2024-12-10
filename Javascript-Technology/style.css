@@ -1,0 +1,108 @@
+:root {
+    font-size: 62.5%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5095e4;
+  }
+  
+  h1 {
+    font-weight: 600;
+  }
+  .container {
+    width: 35rem;
+    min-width: 30rem;
+    padding-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .celsius{
+    font-size: 4rem;
+    padding-top: 3rem;
+  }
+  
+  #temperature{
+    font-weight: 700;
+  }
+  
+  #description {
+    font-style: italic;
+  }
+  
+  #weather-icon {
+    width: 5.5rem;
+  }
+  
+  /*
+  
+  .temp-units:hover {
+    cursor: pointer;
+  }
+  
+  #fahrenheit:hover,
+  #celsius:hover {
+    text-decoration: none;
+    font-weight: 700;
+  }*/
+  
+  .next-5-days {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+  
+  .each-day {
+    padding-top: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .each-day:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+  }
+  
+  .temp-min-forecast {
+    opacity: 0.8;
+    font-size: 1.2rem;
+  }
+  
+  .icons {
+    width: 5rem;
+  }
+  
+  #repo-link,
+  #coder:hover {
+    font-weight: 600;
+    color: black;
+  }
+  
+  #repo-link:hover,
+  #coder:hover {
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+  }
+  
+  #coder {
+    color: inherit;
+    transition: all 200ms ease-in-out;
+  }
